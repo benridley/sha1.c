@@ -8,6 +8,7 @@ int main(int argc, char* argv[]) {
   bool showWords = false;
   bool showProcess = false;
   bool showBlocks = false;
+  // Parse command line arguments
   for(int i = 0; i < argc; i++) {
     if(strcmp(argv[i], "--words") == 0) {
       showWords = true;
@@ -15,9 +16,6 @@ int main(int argc, char* argv[]) {
     if(strcmp(argv[i], "--process") == 0) {
       showProcess = true;
     }
-    if(strcmp(argv[i], "--blocks") == 0) {
-      showBlocks = true;
-    }   
   }
 
 
